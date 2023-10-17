@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 id="title">Customer Survey Form</h1>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div><br>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div><br><br>
+
+      <div>
+        <label for="recommend">Is this first time You are using our product & service?</label><br><br>
+        <input type="radio" name="recommend_page" value="Yes">Yes
+        <input type="radio" name="recommend_page" value="No">No
+      </div><br><br>
+
+      <div>
+        <label for="recommend">Would you suggestion to your friends and colleagues?</label><br><br>
+        <input type="radio" name="recommend_page" value="Yes">Yes
+        <input type="radio" name="recommend_page" value="No">No
+      </div><br><br>
+
+      <div>
+        <label for="recommend">How satisfied are you with our company overall?</label><br><br>
+        <input type="radio" name="recommend_page" value="satisfied">satisfied
+        <input type="radio" name="recommend_page" value="undecided">undecided
+        <input type="radio" name="recommend_page" value="unsatisfied">unsatisfied
+      </div><br><br>
+
+      <div class="form-group in-line">
+
+
+      <div class="form-group">
+        <label for="comments">Do you have suggestion to improve our service?</label><br>
+        <textarea name="comments" placeholder="Enter your suggestion here..." id="comments" cols="30" rows="10"></textarea>
+      </div><br>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div><br>
+      <div>
+      <p id="description">
+        <em>©2023 Customer Survey Form.All Rights Reserved I Design by W3Layouts</em>
+      </p>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

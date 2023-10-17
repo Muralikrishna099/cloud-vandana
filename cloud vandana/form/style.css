@@ -1,0 +1,85 @@
+
+:root {
+  --big-size-letter: 2.8em;
+  --small-size-letter: 1em;
+  --color-default: white;
+  --complementary-background-color: #292949;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-default);
+  text-align: justify;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://surveyheartmedia.s3.ap-south-1.amazonaws.com/public/images/thumbnail_512_342/links.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0em;
+  font-size: var(--big-size-letter);
+  
+}
+
+
+header #description {
+  font-size: var(--small-size-letter);
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+button[type="submit"] {
+  display: block;
+  border-color: #37af65;
+  border-radius: 2px;
+  background-color: #37af65;
+  color: var(--color-default);
+  padding: 1em 0.6em;
+  width: 100%;
+  font-weight: bold;
+}
+
+#survey-form {
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 3em;
+  background-color: var(--complementary-background-color);
+  opacity: 0.8;
+}
+
+#survey-form .form-group {
+  display: grid;
+  grid-template-rows: 3fr;
+  align-items: center;
+}
+
+
+#survey-form .form-group input,
+select,
+textarea {
+  padding: 0.75rem;
+  border-color: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  color: #495057;
+  font-size: 1em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.2em;
+  justify-content: flex-end;
+}
+
